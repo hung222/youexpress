@@ -38,5 +38,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+app.get('/home', (req, res) => {
+  res.render('home.html', {name: 'scsc'});
+});
 module.exports = app;
