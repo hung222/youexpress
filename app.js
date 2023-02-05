@@ -39,6 +39,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 app.get('/', function(req, res){
-    res.render('index', { title: 'Hey', message: 'node node node render.com' })
+    res.redirect('/index')
  });
 module.exports = app;
