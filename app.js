@@ -38,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.get('/', function(req, res){
+app.get('/('/ab(cd)?e', , function (req, res) {
     res.redirect('/index')
  });
 module.exports = app;
