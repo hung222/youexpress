@@ -42,3 +42,4 @@ app.get('/, , function (req, res) {
     res.send('/trangchu page')
  });
 module.exports = app;
+    
