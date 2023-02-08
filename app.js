@@ -19,7 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.get('/', function (req, res) {
+   console.log("Nhan mot GET Request ve Homepage");
+   res.send('Hello GET');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -38,8 +40,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.get('/index, , function (req, res) {
-    res.render('/index')
- });
+
 module.exports = app;
     
