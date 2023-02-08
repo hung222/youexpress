@@ -20,8 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (req, res) {
-   console.log("Nhan mot GET Request ve Homepage");
-   res.send('Hello GET');
+   console.log("Nhan mot GET Request ve index.jade");
+   res.send('index.jae');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
