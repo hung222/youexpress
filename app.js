@@ -38,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.get('/trangchu, , function (req, res) {
+app.get('/, , function (req, res) {
     res.send('/trangchu page')
  });
 module.exports = app;
